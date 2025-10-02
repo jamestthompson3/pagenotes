@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="popup-container">
+      <header class="popup-header">
+        <h1 class="popup-title">Page Highlights</h1>
+      </header>
+
+      <main class="popup-content">
+        <div id="loading" class="loading-state">
+          <span>LOADING HIGHLIGHTS...</span>
+        </div>
+
+        <div id="container" class="highlights-container hidden"></div>
+
+        <div id="empty-state" class="empty-state hidden">
+          <h3>No Highlights Available</h3>
+          <p>Select text and right-click to save highlights</p>
+        </div>
+      </main>
+
+      <footer class="popup-footer">
+        <div class="page-info" id="page-info"></div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

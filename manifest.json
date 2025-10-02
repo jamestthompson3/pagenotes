@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "name": "page-notes",
+  "description": "Highlight bits of a webpage and add notes",
+  "version": "0.0.1",
+  "permissions": ["contextMenus", "menus", "tabs", "storage"],
+  "icons": {
+    "64": "icons/icon.png"
+  },
+  "background": {
+    "scripts": ["background_script.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["content_script.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": {
+      "64": "icons/icon.png"
+    },
+    "default_popup": "browserAction/index.html",
+    "default_title": "page-notes"
+  },
+  "page_action": {
+    "default_icon": {
+      "64": "icons/icon.png"
+    },
+    "default_popup": "pageAction/index.html",
+    "default_title": "page-notes"
+  },
+  "options_ui": {
+    "page": "options/index.html"
+  }
+}
