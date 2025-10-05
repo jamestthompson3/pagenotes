@@ -16,6 +16,17 @@ body {
   font-size: 12px;
 }
 
+textarea {
+  height: 250px;
+  width: 70%;
+  margin: auto;
+  align-self: center;
+  border: 1px solid #00ff00;
+  background-color: #000000;
+  color: #00ff00;
+  padding: 4px;
+}
+
 .popup-container {
   display: flex;
   flex-direction: column;
@@ -114,7 +125,7 @@ body {
   padding: 4px 8px;
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   min-height: 16px;
 }
 
@@ -129,13 +140,22 @@ body {
   font-size: 12px;
 }
 
+.highlight-item button {
+  border: none;
+  padding: 4px 8px;
+  height: 16px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #00ff00;
+}
+
 .highlight-link {
   color: #00ff00;
   text-decoration: none;
   font-size: 11px;
   line-height: 1.2;
   display: block;
-  text-overflow: ellipsis " [..]";
+  text-overflow: "";
   overflow: hidden;
   white-space: nowrap;
   word-break: break-word;
